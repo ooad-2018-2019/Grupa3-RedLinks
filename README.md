@@ -2,6 +2,11 @@
 
 # BDA – Blood Donation Application
 
+<p align="center">
+  <img src="https://scontent.fsjj1-1.fna.fbcdn.net/v/t1.15752-9/48371424_585180648607593_8537970903672160256_n.jpg?_nc_cat=101&_nc_ht=scontent.fsjj1-1.fna&oh=8854760f2f844207868c75f7b37dc86e&oe=5D060FAA" width="500" >
+</p>
+
+
 ### Članovi tima:
 __Džavid Brdar, Esmina Radušić, Samra Pušina__
 -	- - - 
@@ -45,4 +50,8 @@ __Klinika__:
 * __Zavod__ – korisnik aplikacije. Nakon prijave na sistem ima mogućnost unosa informacija o trenutno obavljenom laboratorijskom nalazu donora, kao i unos informacija o obavljenoj donaciji krvi, registrovanje novih donora, te ažuriranje podataka o postojećim donorima. Vrši pregled primljenih zahtjeva od strane klinika,  na osnovu toga pretražuje zalihe te  isporučuje  određene količine potraživačima ili poziva donore na darivanje krvi.
 
 
-* __Klinika__ – korisnik aplikacije. Prijavljivanjem na sistem ima mogućnost slanja zahtjeva zavodu za dostavu određenih količina stavki krvi, kao i pregled potvđenih zahtjeva od strane zavoda.  
+* __Klinika__ – korisnik aplikacije. Prijavljivanjem na sistem ima mogućnost slanja zahtjeva zavodu za dostavu određenih količina stavki krvi, kao i pregled potvđenih zahtjeva od strane zavoda.
+
+<p align="center">
+  <img src="https://scontent.fsjj1-1.fna.fbcdn.net/v/t1.15752-9/56403799_2297116600574067_368231976060059648_n.png?_nc_cat=111&_nc_ht=scontent.fsjj1-1.fna&oh=c632ad63dadeaefd20b6578cb136acf3&oe=5D3F3320" width="1000" >
+</p>
