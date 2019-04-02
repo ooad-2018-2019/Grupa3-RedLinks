@@ -21,7 +21,7 @@ __BDA – Blood Donation Application__ olakšava poslovanje zavoda za transfuzio
 Administrator dodjeljuje username i password korisnicima aplikacije (zavodi i medicinske ustanove) pomoću kojih se iste prijavljuju na sistem.
 
 Ukoliko je korisnik zavod, nude mu se sljedeće mogućnosti:
-* Unos informacija o pregledu. Ovaj formular sadrži: lične podatke donora (ime, prezime, JMBG, e-mail, krvna grupa), informacije o urađenom labaratorijskom nalazu, kao i neke dodatne informacije - dobrovoljni darivatelji krvi dužni su dati iskrene odgovore o svom zdravstvenom stanju pri ljekarskom pregledu prije svakog darivanja krvi. Osobe ne smiju darivati krv ako sumnjaju ili znaju da primjena njihove krvi može štetiti bolesnikovom zdravlju. Obavljen ljekarski pregled predstavlja uvjet za nastavak procesa darivanja krvi.
+* Unos informacija o pregledu. Ovaj formular sadrži: lične podatke donora (ime, prezime, JMBG, e-mail, krvna grupa), informacije o urađenom laboratorijskom nalazu, kao i neke dodatne informacije - dobrovoljni darivatelji krvi dužni su dati iskrene odgovore o svom zdravstvenom stanju pri ljekarskom pregledu prije svakog darivanja krvi. Osobe ne smiju darivati krv ako sumnjaju ili znaju da primjena njihove krvi može štetiti bolesnikovom zdravlju. Obavljen ljekarski pregled predstavlja uvjet za nastavak procesa darivanja krvi.
 * Pregled trenutnih zaliha pojedinih stavki krvi (trombocita, eritrocita, leukocita…).
 * Pregled i pretraga registrovanih donora, kao i mogućnost poziva u hitnim slučajevima.
 * Pregled primljenih zahtjeva od strane medicinskih ustanova i odgovor na njih.
@@ -47,10 +47,10 @@ __Klinika__:
 ## Akteri:
 * __Administrator__ – osoba koja je zadužena za održavanje i upravljanje te autorizaciju pristupa sistemu (dodavanje, oduzimanje i ažuriranje korisničkih naloga). Koordinira i nadgleda rad baze podataka, radi na poboljšanju performansi sistema.
 
-* __Zavod__ – korisnik aplikacije. Nakon prijave na sistem ima mogućnost unosa informacija o trenutno obavljenom laboratorijskom nalazu donora, kao i unos informacija o obavljenoj donaciji krvi, registrovanje novih donora, te ažuriranje podataka o postojećim donorima. Vrši pregled primljenih zahtjeva od strane klinika,  na osnovu toga pretražuje zalihe te  isporučuje  određene količine potraživačima ili poziva donore na darivanje krvi.
+* __Uposlenik zavoda__ – korisnik aplikacije. Nakon prijave na sistem ima mogućnost unosa informacija o trenutno obavljenom laboratorijskom nalazu donora, kao i unos informacija o obavljenoj donaciji krvi, registrovanje novih donora, te ažuriranje podataka o postojećim donorima. Vrši pregled primljenih zahtjeva od strane klinika,  na osnovu toga pretražuje zalihe te  isporučuje  određene količine potraživačima ili poziva donore na darivanje krvi.
 
 
-* __Klinika__ – korisnik aplikacije. Prijavljivanjem na sistem ima mogućnost slanja zahtjeva zavodu za dostavu određenih količina stavki krvi, kao i pregled potvđenih zahtjeva od strane zavoda.
+* __Uposlenik klinike__ – korisnik aplikacije. Prijavljivanjem na sistem ima mogućnost slanja zahtjeva zavodu za dostavu određenih količina stavki krvi, kao i pregled potvđenih zahtjeva od strane zavoda.
 
 * __Donor__ – osoba koja donira krv
 
