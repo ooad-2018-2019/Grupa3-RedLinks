@@ -35,7 +35,7 @@ Korisnik klinika ima mogućnosti:
 
 __Zavod__: 
 * Unos informacija o pregledu
-* Unos informacija o pregledu te ažuriranje zaliha
+* Unos informacija o donaciji te ažuriranje zaliha
 * Pregled i pretraga donora i zaliha krvi
 * Pregled primljenih zahtjeva od strane klinika
 * Poziv donora u hitnim slučajevima
@@ -51,6 +51,8 @@ __Klinika__:
 
 
 * __Klinika__ – korisnik aplikacije. Prijavljivanjem na sistem ima mogućnost slanja zahtjeva zavodu za dostavu određenih količina stavki krvi, kao i pregled potvđenih zahtjeva od strane zavoda.
+
+* __Donor__ – osoba koja donira krv
 
 <p align="center">
   <img src="https://scontent.fsjj1-1.fna.fbcdn.net/v/t1.15752-9/56403799_2297116600574067_368231976060059648_n.png?_nc_cat=111&_nc_ht=scontent.fsjj1-1.fna&oh=c632ad63dadeaefd20b6578cb136acf3&oe=5D3F3320" width="1000" >
