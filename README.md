@@ -45,7 +45,7 @@ __Klinika__:
 * Slanje zahtjeva
 
 ## Akteri:
-* __Administrator__ – osoba koja je zadužena za održavanje i upravljanje te autorizaciju pristupa sistemu (dodavanje, oduzimanje i ažuriranje korisničkih naloga). Koordinira i nadgleda rad baze podataka, radi na poboljšanju performansi sistema.
+* __Administrator__ – osoba koja je zadužena za održavanje i upravljanje te autorizaciju pristupa sistemu (dodavanje, oduzimanje i ažuriranje korisničkih naloga).
 
 * __Uposlenik zavoda__ – korisnik aplikacije. Nakon prijave na sistem ima mogućnost unosa informacija o trenutno obavljenom laboratorijskom nalazu donora, kao i unos informacija o obavljenoj donaciji krvi, registrovanje novih donora, te ažuriranje podataka o postojećim donorima. Vrši pregled primljenih zahtjeva od strane klinika,  na osnovu toga pretražuje zalihe te  isporučuje  određene količine potraživačima ili poziva donore na darivanje krvi.
 
