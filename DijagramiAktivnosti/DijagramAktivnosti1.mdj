@@ -514,17 +514,17 @@
 										"$ref": "AAAAAAFp/2vflYJx+X4="
 									},
 									"font": "Arial;13;0",
-									"left": 584,
-									"top": 310,
+									"left": 576,
+									"top": 308,
 									"width": 93.9580078125,
 									"height": 26,
-									"alpha": -1.8490961379788178,
-									"distance": 43.68065933568311,
+									"alpha": -1.8438052206992892,
+									"distance": 51.92301994298868,
 									"hostEdge": {
 										"$ref": "AAAAAAFp/2vflYJyU10="
 									},
 									"edgePosition": 1,
-									"text": "zalihe ne postoje",
+									"text": "[zalihe ne postoje]",
 									"wordWrap": true
 								},
 								{
@@ -769,7 +769,7 @@
 											"font": "Arial;13;0",
 											"left": -64,
 											"top": -128,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -871,7 +871,7 @@
 											"font": "Arial;13;0",
 											"left": 368,
 											"top": 1296,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -973,7 +973,7 @@
 											"font": "Arial;13;0",
 											"left": -176,
 											"top": 112,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -1075,7 +1075,7 @@
 											"font": "Arial;13;0",
 											"left": -112,
 											"top": 80,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -1621,7 +1621,7 @@
 										"$ref": "AAAAAAFqAk8On+1WkSA="
 									},
 									"edgePosition": 1,
-									"text": "zalihe postoje",
+									"text": "[zalihe postoje]",
 									"wordWrap": true
 								},
 								{
@@ -1741,7 +1741,7 @@
 											"font": "Arial;13;0",
 											"left": -64,
 											"top": 48,
-											"width": 86.6708984375,
+											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
 										},
@@ -2208,7 +2208,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFp/1ofjYADZEE="
 					},
-					"name": "zalihe ne postoje",
+					"name": "[zalihe ne postoje]",
 					"source": {
 						"$ref": "AAAAAAFp/2M1EIDmVuM="
 					},
@@ -2404,7 +2404,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFp/1ofjYADZEE="
 					},
-					"name": "zalihe postoje",
+					"name": "[zalihe postoje]",
 					"source": {
 						"$ref": "AAAAAAFp/2M1EIDmVuM="
 					},
