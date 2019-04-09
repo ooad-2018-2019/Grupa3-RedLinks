@@ -572,7 +572,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 160,
-											"top": -28,
+											"top": -44,
 											"height": 13
 										},
 										{
@@ -583,7 +583,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 565,
-											"top": 271,
+											"top": 263,
 											"width": 139.4326171875,
 											"height": 13,
 											"text": "Evidentiranje pregleda"
@@ -597,7 +597,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 160,
-											"top": -28,
+											"top": -44,
 											"width": 88,
 											"height": 13,
 											"text": "(from Activity1)"
@@ -611,14 +611,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 160,
-											"top": -28,
+											"top": -44,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 560,
-									"top": 264,
+									"top": 256,
 									"width": 149.4326171875,
 									"height": 25,
 									"stereotypeLabel": {
@@ -638,7 +638,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 560,
-							"top": 264,
+							"top": 256,
 							"width": 149.4326171875,
 							"height": 41,
 							"nameCompartment": {
@@ -667,7 +667,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 654,
-									"top": 229,
+									"top": 225,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -688,7 +688,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 669,
-									"top": 229,
+									"top": 225,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -709,7 +709,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 625,
-									"top": 230,
+									"top": 226,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -726,7 +726,7 @@
 							"tail": {
 								"$ref": "AAAAAAFqARSFHOXWMW0="
 							},
-							"points": "640:208;640:264",
+							"points": "640:208;640:256",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFqARVuvuZlWxI="
@@ -758,17 +758,18 @@
 										"$ref": "AAAAAAFqARXI/+Z+LaI="
 									},
 									"font": "Arial;13;0",
-									"left": 535,
-									"top": 319,
-									"width": 101.17529296875,
-									"height": 13,
+									"left": 531,
+									"top": 308,
+									"width": 108.39892578125,
+									"height": 26,
 									"alpha": -1.5337767040716501,
 									"distance": 54.037024344425184,
 									"hostEdge": {
 										"$ref": "AAAAAAFqARXI/+Z/L6A="
 									},
 									"edgePosition": 1,
-									"text": "Uspješan pregled"
+									"text": "[Uspješan pregled]",
+									"wordWrap": true
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -782,7 +783,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 669,
-									"top": 317,
+									"top": 313,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -803,7 +804,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 625,
-									"top": 318,
+									"top": 314,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -820,7 +821,7 @@
 							"tail": {
 								"$ref": "AAAAAAFqARVtaOZMjhU="
 							},
-							"points": "640:304;640:344",
+							"points": "640:296;640:344",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFqARXI/+aAUvY="
@@ -852,12 +853,12 @@
 										"$ref": "AAAAAAFqARXKeeaout0="
 									},
 									"font": "Arial;13;0",
-									"left": 285,
+									"left": 282,
 									"top": 359,
 									"width": 16.6181640625,
 									"height": 13,
-									"alpha": -0.9586437960918739,
-									"distance": 22.02271554554524,
+									"alpha": -1.2924969586702328,
+									"distance": 21.840329667841555,
 									"hostEdge": {
 										"$ref": "AAAAAAFqARXKeeapEI0="
 									},
@@ -876,7 +877,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 341,
-									"top": 346,
+									"top": 353,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -897,7 +898,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 297,
-									"top": 347,
+									"top": 354,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -914,7 +915,7 @@
 							"tail": {
 								"$ref": "AAAAAAFqARXHy+Z7ggM="
 							},
-							"points": "632:353;312:353;312:376",
+							"points": "624:360;312:360;312:384",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFqARXKeeaqI7U="
@@ -940,10 +941,10 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 632,
+							"left": 624,
 							"top": 344,
-							"width": 23,
-							"height": 19
+							"width": 33,
+							"height": 33
 						},
 						{
 							"_type": "UMLActionView",
@@ -974,7 +975,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -572,
-											"top": -118,
+											"top": -102,
 											"height": 13
 										},
 										{
@@ -985,7 +986,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 269,
-											"top": 383,
+											"top": 391,
 											"width": 85.2744140625,
 											"height": 13,
 											"text": "Darivanje krvi"
@@ -999,7 +1000,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -572,
-											"top": -118,
+											"top": -102,
 											"width": 86.6708984375,
 											"height": 13,
 											"text": "(from Donor)"
@@ -1013,14 +1014,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": -572,
-											"top": -118,
+											"top": -102,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 264,
-									"top": 376,
+									"top": 384,
 									"width": 95.2744140625,
 									"height": 25,
 									"stereotypeLabel": {
@@ -1043,7 +1044,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 264,
-							"top": 376,
+							"top": 384,
 							"width": 95.2744140625,
 							"height": 41,
 							"nameCompartment": {
@@ -1090,7 +1091,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 749,
-									"top": 350,
+									"top": 358,
 									"width": 16.6181640625,
 									"height": 13,
 									"alpha": 1.231503156297157,
@@ -1113,7 +1114,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 773,
-									"top": 345,
+									"top": 353,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1134,7 +1135,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 729,
-									"top": 346,
+									"top": 354,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1151,7 +1152,7 @@
 							"tail": {
 								"$ref": "AAAAAAFqARXHy+Z7ggM="
 							},
-							"points": "654:352;744:352;744:384",
+							"points": "656:360;744:360;744:384",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFqARhYEOdqmrw="
@@ -1452,7 +1453,7 @@
 								"$ref": "AAAAAAFqARXJ9OaRaD0="
 							},
 							"lineStyle": 1,
-							"points": "311:417;312:440;648:440;647:471",
+							"points": "312:425;312:440;648:440;647:471",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFqASAFT+iHLoM="
@@ -1822,7 +1823,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFqARC65eTWdkA="
 					},
-					"name": "Uspješan pregled",
+					"name": "[Uspješan pregled]",
 					"source": {
 						"$ref": "AAAAAAFqARVtaOZK1CM="
 					},
