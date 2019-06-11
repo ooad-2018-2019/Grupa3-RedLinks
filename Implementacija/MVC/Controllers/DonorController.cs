@@ -64,7 +64,7 @@ namespace BloodDonationApplication.Controllers
             {
                 _context.Add(donor);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Create", "Pregled"); //kada odaberemo unos pregleda
             }
             return View(donor);
         }

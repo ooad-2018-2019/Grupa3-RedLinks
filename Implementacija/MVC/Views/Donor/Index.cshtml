@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<BloodDonationApplication.Models.Donor>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lista donora";
 }
 
-<h1>Index</h1>
+<h1 style="color:#cc0000;">Lista donora</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Unesite podatke o novom donoru</a>
 </p>
 <table class="table">
     <thead>
@@ -34,32 +34,36 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Prezime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Jmbg)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BrojMobilnogTelefona)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Grad)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.DonorId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DonorId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DonorId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Prezime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Jmbg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BrojMobilnogTelefona)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Grad)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.DonorId">Uredi</a> |
+                    <a asp-action="Details" asp-route-id="@item.DonorId">Detalji</a> |
+                    <a asp-action="Delete" asp-route-id="@item.DonorId">Obriši</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<div>
+    <a asp-action="Index" asp-controller="Home">Nazad na početnu</a>
+</div>

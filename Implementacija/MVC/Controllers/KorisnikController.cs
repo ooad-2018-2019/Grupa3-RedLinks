@@ -59,8 +59,10 @@ namespace BloodDonationApplication.Controllers
             {
                 _context.Add(korisnik);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if(korisnik.KorisnickoIme=="Zavod" && korisnik.sifra=="Zavod123")
+                return RedirectToAction("Create","Donor"); //ovdje pozivamo novi pogled unos donora
             }
+            
             return View(korisnik);
         }
 

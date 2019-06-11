@@ -1,10 +1,10 @@
 ﻿@model BloodDonationApplication.Models.Korisnik
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Prijava";
 }
 
-<h1>Create</h1>
+<h1 style="color:#cc0000;">Prijava</h1>
 
 <h4>Korisnik</h4>
 <hr />
@@ -23,14 +23,14 @@
                 <span asp-validation-for="sifra" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Prijavi" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" asp-controller="Home">Nazad na početnu</a>
 </div>
 
 @section Scripts {

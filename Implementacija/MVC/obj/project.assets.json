@@ -12943,11 +12943,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\BloodDonationApplication\\BloodDonationApplication\\BloodDonationApplication.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj",
       "projectName": "BloodDonationApplication",
-      "projectPath": "C:\\Users\\user\\source\\repos\\BloodDonationApplication\\BloodDonationApplication\\BloodDonationApplication.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\BloodDonationApplication\\BloodDonationApplication\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Grupa3-RedLinks\\Implementacija\\MVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

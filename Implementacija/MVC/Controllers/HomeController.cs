@@ -21,7 +21,7 @@ namespace BloodDonationApplication.Controllers
         }
 
 
-        public IActionResult noviPogled()
+        public IActionResult Prijava()
         {
             return View();
         }
