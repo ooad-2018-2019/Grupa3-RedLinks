@@ -27,6 +27,11 @@ namespace BloodDonationApplication.Controllers
             return View(await _context.Donor.ToListAsync());
         }
 
+        public async Task<IActionResult> IndexPoKrvnojGrupi(string krvnaGrupaNaziv)
+        {
+            return View(await _context.Donor.Where(d => d.KrvnaGrupa.Naziv == krvnaGrupaNaziv).ToListAsync());
+        }
+
         // GET: Donor/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -37,6 +42,7 @@ namespace BloodDonationApplication.Controllers
 
             var donor = await _context.Donor
                 .FirstOrDefaultAsync(m => m.DonorId == id);
+
             if (donor == null)
             {
                 return NotFound();
@@ -58,7 +64,7 @@ namespace BloodDonationApplication.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("DonorId,Ime,Prezime,Email,Jmbg,BrojMobilnogTelefona,Grad")] Donor donor)
+        public async Task<IActionResult> Create(/*[Bind("DonorId,Ime,Prezime,Email,Jmbg,BrojMobilnogTelefona,Grad")]*/ Donor donor)
         {
             if (ModelState.IsValid)
             {

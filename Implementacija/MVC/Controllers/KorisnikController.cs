@@ -59,8 +59,14 @@ namespace BloodDonationApplication.Controllers
             {
                 _context.Add(korisnik);
                 await _context.SaveChangesAsync();
-                if(korisnik.KorisnickoIme=="Zavod" && korisnik.sifra=="Zavod123")
-                return RedirectToAction("Create","Donor"); //ovdje pozivamo novi pogled unos donora
+                if (korisnik.KorisnickoIme == "Zavod" && korisnik.sifra == "Zavod123")
+                {
+                    return RedirectToAction("Index", "Zavod"); //ovdje pozivamo glavni pogled zavoda
+                }
+                else if (korisnik.KorisnickoIme == "NasaMalaKlinika" && korisnik.sifra == "SanjaGrospicMBA")
+                {
+                    return RedirectToAction("Index", "Klinika"); // Ako je prijavljena klinika, otvara njenu glavnu stranicu
+                }
             }
             
             return View(korisnik);

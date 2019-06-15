@@ -43,7 +43,12 @@
                 <span asp-validation-for="Grad" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Unos pregleda" class="btn btn-primary" />
+                <label asp-for="KrvnaGrupa.Naziv" class="control-label"></label>
+                <input asp-for="KrvnaGrupa.Naziv" class="form-control" />
+                <span asp-validation-for="KrvnaGrupa.Naziv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Unos donora" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -53,7 +58,7 @@
     <a asp-action="Index">Pregled svih donora</a>
 </div>
 <div>
-    <a asp-action="Index" asp-controller="Home">Nazad na početnu</a>
+    <a asp-action="Index" asp-controller="Home">Odjava</a>
 </div>
 
 

@@ -14,7 +14,7 @@ namespace BloodDonationApplication.Models
         public DbSet<Zahtjev> Zahtjev { get; set; }
         public DbSet<Zavod> Zavod { get; set; }
         public DbSet<Korisnik> Korisnik { get; set; }
-        public DbSet<KrvnaGrupa> KrvanGrupa { get; set; }
+        public DbSet<KrvnaGrupa> KrvnaGrupa { get; set; }
         public DbSet<Zalihe> Zalihe { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
