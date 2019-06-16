@@ -63,7 +63,7 @@ namespace BloodDonationApplication.Controllers
                 {
                     return RedirectToAction("Index", "Zavod"); //ovdje pozivamo glavni pogled zavoda
                 }
-                else if (korisnik.KorisnickoIme == "NasaMalaKlinika" && korisnik.sifra == "SanjaGrospicMBA")
+                else if (korisnik.KorisnickoIme == "NasaMalaKlinika" && korisnik.sifra == "Klinika123")
                 {
                     return RedirectToAction("Index", "Klinika"); // Ako je prijavljena klinika, otvara njenu glavnu stranicu
                 }

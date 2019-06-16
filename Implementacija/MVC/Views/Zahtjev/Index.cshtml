@@ -1,14 +1,11 @@
 ﻿@model IEnumerable<BloodDonationApplication.Models.Zahtjev>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Pregled zahtjeva";
 }
 
-<h1>Index</h1>
+<h1>Pregled zahtjeva</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -39,6 +36,11 @@
 }
     </tbody>
 </table>
+
+
+<p>
+    <a asp-action="Index" asp-controller="Zavod">Povratak na prethodnu stranicu</a>
+</p>
 
 <div>
     <a asp-action="Index" asp-controller="Home">Odjava</a>

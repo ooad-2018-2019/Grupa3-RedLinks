@@ -24,6 +24,11 @@ namespace BloodDonationApplication.Controllers
             return View(await _context.Zahtjev.ToListAsync());
         }
 
+        public async Task<IActionResult> PregledZahtjevaKlinika()
+        {
+            return View(await _context.Zahtjev.ToListAsync());
+        }
+
         // GET: Zahtjev/Details/5
         public async Task<IActionResult> Details(int? id)
         {

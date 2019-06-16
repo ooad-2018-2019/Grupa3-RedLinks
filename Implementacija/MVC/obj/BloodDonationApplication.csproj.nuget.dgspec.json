@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amela\\Desktop\\bda\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj": {}
+    "C:\\Users\\user\\Desktop\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amela\\Desktop\\bda\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj": {
+    "C:\\Users\\user\\Desktop\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amela\\Desktop\\bda\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj",
         "projectName": "BloodDonationApplication",
-        "projectPath": "C:\\Users\\Amela\\Desktop\\bda\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj",
-        "packagesPath": "C:\\Users\\Amela\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amela\\Desktop\\bda\\Grupa3-RedLinks\\Implementacija\\MVC\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Grupa3-RedLinks\\Implementacija\\MVC\\BloodDonationApplication.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Grupa3-RedLinks\\Implementacija\\MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Amela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
