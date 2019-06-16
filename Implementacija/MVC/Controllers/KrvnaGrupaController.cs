@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BloodDonationApplication.Models;
+using System.Net.Mail;
+using System.Net;
 
 namespace BloodDonationApplication.Controllers
 {
@@ -36,6 +38,34 @@ namespace BloodDonationApplication.Controllers
                 .FirstOrDefaultAsync(m => m.KrvnaGrupaId == id);
 
             if (sifra == 57) return RedirectToAction("IndexPoKrvnojGrupi", "Donor", new { krvnaGrupaNaziv = krvnaGrupa.Naziv });
+
+            else if (sifra == 59)
+            {
+                List<Donor> listaNadjenihDonora 
+                    = await _context.Donor.Where(d => d.KrvnaGrupa.Naziv == krvnaGrupa.Naziv).ToListAsync();
+                var smtpClient = new SmtpClient
+                {
+                    Host = "smtp.gmail.com",
+                    Port = 587,
+                    EnableSsl = true,
+                    Credentials = new NetworkCredential("bda.application@gmail.com", "RedLinks2019")
+                };
+                var message = new MailMessage();
+                message.From = new MailAddress("bda.application@gmail.com");
+                foreach (Donor donor in listaNadjenihDonora)
+                {
+                    message.To.Add(donor.Email.Trim());
+                }
+                message.Subject = "Poziv na doniranje krvi";
+                message.Body = "Postovani/a,\n" +
+                    "Ovim putem Vas, uslijed porasle potrebe za Vasom krvnom grupom, pozivamo da" +
+                    " u sto skorijem roku, ukoliko ste u mogucnosti, ponovo donirate krv u nasem zavodu. Budite slobodni" +
+                    " da nas za sva potrebna pitanja kontaktirate putem nase mail adrese.\n" +
+                    "Unaprijed zahvalni,\n\n" +
+                    "Zavod za transfuziologiju krvi.";
+                await smtpClient.SendMailAsync(message);
+                return RedirectToAction("Index", "Zavod");
+            }
 
             if (krvnaGrupa == null)
             {

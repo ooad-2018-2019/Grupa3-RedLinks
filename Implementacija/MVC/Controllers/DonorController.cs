@@ -32,6 +32,11 @@ namespace BloodDonationApplication.Controllers
             return View(await _context.Donor.Where(d => d.KrvnaGrupa.Naziv == krvnaGrupaNaziv).ToListAsync());
         }
 
+        public async Task<IActionResult> Poziv()
+        {
+            return RedirectToAction();
+        }
+
         // GET: Donor/Details/5
         public async Task<IActionResult> Details(int? id)
         {
