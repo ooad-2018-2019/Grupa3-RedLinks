@@ -27,9 +27,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Grad)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.KrvnaGrupa.Naziv)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -56,12 +53,9 @@
                     @Html.DisplayFor(modelItem => item.Grad)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.KrvnaGrupa.Naziv)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.DonorId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.DonorId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.DonorId">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.DonorId">Uredi</a> |
+                    <a asp-action="Details" asp-route-id="@item.DonorId">Detalji</a> |
+                    <a asp-action="Delete" asp-route-id="@item.DonorId">Obriši</a>
                 </td>
             </tr>
         }

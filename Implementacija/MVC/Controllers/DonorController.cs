@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BloodDonationApplication.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json;
 
 namespace BloodDonationApplication.Controllers
 {
@@ -24,7 +27,25 @@ namespace BloodDonationApplication.Controllers
         // GET: Donor
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Donor.ToListAsync());
+            // Stara verzija:
+            //return View(await _context.Donor.ToListAsync());
+
+            // Nova verzija sa API-jem:
+            string apiUrl = "https://blooddonationapplication.azurewebsites.net/";
+            List<Donor> donori = new List<Donor>();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(apiUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage httpResponseMessage = await client.GetAsync("api/donor/");
+                if (httpResponseMessage.IsSuccessStatusCode)
+                {
+                    var response = httpResponseMessage.Content.ReadAsStringAsync().Result;
+                    donori = JsonConvert.DeserializeObject<List<Donor>>(response);
+                }
+                return View(donori);
+            }
         }
 
         public async Task<IActionResult> IndexPoKrvnojGrupi(string krvnaGrupaNaziv)

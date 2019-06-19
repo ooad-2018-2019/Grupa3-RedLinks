@@ -23,7 +23,30 @@ namespace BloodDonationApplication.Controllers
         // GET: KrvnaGrupa
         public async Task<IActionResult> Index()
         {
-            return View(await _context.KrvnaGrupa.ToListAsync());
+            List<KrvnaGrupa> krvneGrupe = 
+                await _context.KrvnaGrupa.GroupBy(k => k.Naziv).Select(k => k.FirstOrDefault()).ToListAsync();
+            for (int i = 0; i < krvneGrupe.Count; i++)
+            {
+                if (krvneGrupe[i].Naziv == null)
+                {
+                    krvneGrupe.RemoveAt(i);
+                    i--;
+                    continue;
+                }
+                if (krvneGrupe[i].Naziv.Trim() == "")
+                {
+                    krvneGrupe.RemoveAt(i);
+                    i--;
+                    continue;
+                }
+                if (krvneGrupe[i].Naziv.Trim().Length == 0)
+                {
+                    krvneGrupe.RemoveAt(i);
+                    i--;
+                    continue;
+                }
+            }
+            return View(krvneGrupe);
         }
 
         // GET: KrvnaGrupa/Details/5
@@ -62,9 +85,9 @@ namespace BloodDonationApplication.Controllers
                     " u sto skorijem roku, ukoliko ste u mogucnosti, ponovo donirate krv u nasem zavodu. Budite slobodni" +
                     " da nas za sva potrebna pitanja kontaktirate putem nase mail adrese.\n" +
                     "Unaprijed zahvalni,\n\n" +
-                    "Zavod za transfuziologiju krvi.";
+                    "Zavod za transfuziologiju krvi";
                 await smtpClient.SendMailAsync(message);
-                return RedirectToAction("Index", "Zavod");
+                return RedirectToAction("PotvrdaEmailova", "Zavod");
             }
 
             if (krvnaGrupa == null)

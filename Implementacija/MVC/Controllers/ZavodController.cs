@@ -18,6 +18,11 @@ namespace BloodDonationApplication.Controllers
             _context = context;
         }
 
+        public IActionResult PotvrdaEmailova()
+        {
+            return View();
+        }
+
         // GET: Zavod
         public async Task<IActionResult> Index()
         {
