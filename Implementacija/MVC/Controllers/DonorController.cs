@@ -38,7 +38,7 @@ namespace BloodDonationApplication.Controllers
         }
 
         // GET: Donor/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id, int? sifra)
         {
             if (id == null)
             {
@@ -56,7 +56,20 @@ namespace BloodDonationApplication.Controllers
             return View(donor);
         }
 
-     //   [Authorize(Roles ="Zavod")]
+        public async Task<IActionResult> Pretraga()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Usmjeravanje(Donor donor)
+        {
+            List<Donor> listaNadjenihDonora
+                    = await _context.Donor.Where(d => d.Jmbg == donor.Jmbg).ToListAsync();
+            if (listaNadjenihDonora.Count == 0) return RedirectToAction("Create", "Donor");
+            else return RedirectToAction("Create", "Pregled", new { poslaniDonor = donor });
+        }
+
+        //   [Authorize(Roles ="Zavod")]
         // GET: Donor/Create
         public IActionResult Create()
         {
@@ -65,11 +78,9 @@ namespace BloodDonationApplication.Controllers
 
 
         // POST: Donor/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(/*[Bind("DonorId,Ime,Prezime,Email,Jmbg,BrojMobilnogTelefona,Grad")]*/ Donor donor)
+        public async Task<IActionResult> Create(Donor donor)
         {
             if (ModelState.IsValid)
             {

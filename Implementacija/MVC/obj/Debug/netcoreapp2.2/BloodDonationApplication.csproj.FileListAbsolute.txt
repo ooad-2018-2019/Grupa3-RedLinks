@@ -192,3 +192,6 @@ C:\Users\user\Desktop\Grupa3-RedLinks\Implementacija\MVC\obj\Debug\netcoreapp2.2
 C:\Users\user\Desktop\Grupa3-RedLinks\Implementacija\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Zavod\Edit.g.cshtml.cs
 C:\Users\user\Desktop\Grupa3-RedLinks\Implementacija\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Zavod\Index.g.cshtml.cs
 C:\Users\user\Desktop\Grupa3-RedLinks\Implementacija\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Zahtjev\PregledZahtjevaKlinika.g.cshtml.cs
+C:\Users\Amela\Desktop\bda\Grupa3-RedLinks\Implementacija\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Zahtjev\PregledZahtjevaKlinika.g.cshtml.cs
+C:\Users\Amela\Desktop\bda\Grupa3-RedLinks\Implementacija\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Donor\Pretraga.g.cshtml.cs
+C:\Users\Amela\Desktop\bda\Grupa3-RedLinks\Implementacija\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Korisnik\CreatePonovniPokusaj.g.cshtml.cs

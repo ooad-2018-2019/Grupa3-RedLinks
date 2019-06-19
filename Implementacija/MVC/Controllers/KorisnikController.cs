@@ -48,6 +48,11 @@ namespace BloodDonationApplication.Controllers
             return View();
         }
 
+        public IActionResult CreatePonovniPokusaj()
+        {
+            return View();
+        }
+
         // POST: Korisnik/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -57,18 +62,17 @@ namespace BloodDonationApplication.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(korisnik);
-                await _context.SaveChangesAsync();
-                if (korisnik.KorisnickoIme == "Zavod" && korisnik.sifra == "Zavod123")
-                {
-                    return RedirectToAction("Index", "Zavod"); //ovdje pozivamo glavni pogled zavoda
-                }
-                else if (korisnik.KorisnickoIme == "NasaMalaKlinika" && korisnik.sifra == "Klinika123")
-                {
+                List<Korisnik> listaNadjenihKorisnika
+                    = await _context.Korisnik.Where(k => k.KorisnickoIme == korisnik.KorisnickoIme && 
+                    k.sifra == korisnik.sifra).ToListAsync();
+                if (listaNadjenihKorisnika.Count == 0)
+                    return RedirectToAction("CreatePonovniPokusaj", "Korisnik"); // Ako je prijava bila bezuspjesna
+                Korisnik nadjeniKorisnik = listaNadjenihKorisnika[0];
+                if (nadjeniKorisnik.KorisnickoIme.Contains("Zavod"))
+                    return RedirectToAction("Index", "Zavod"); // Ovdje pozivamo glavni pogled zavoda
+                else if (nadjeniKorisnik.KorisnickoIme.Contains("Klinika"))
                     return RedirectToAction("Index", "Klinika"); // Ako je prijavljena klinika, otvara njenu glavnu stranicu
-                }
             }
-            
             return View(korisnik);
         }
 

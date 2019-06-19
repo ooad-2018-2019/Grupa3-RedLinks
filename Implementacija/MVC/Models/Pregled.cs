@@ -19,7 +19,5 @@ namespace BloodDonationApplication.Models
         [DisplayName("Uspješan pregled")]
         public bool UspjesanPregled { get; set; }
         public LaboratorijskiNalaz LabNalazId { get; set; }
-      
-
     }
 }

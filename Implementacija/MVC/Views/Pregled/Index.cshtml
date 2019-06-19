@@ -25,26 +25,36 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DatumPregleda)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DetaljiPregleda)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UspjesanPregled)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PregledId">Uredi</a> |
-                <a asp-action="Details" asp-route-id="@item.PregledId">Detalji</a> |
-                <a asp-action="Delete" asp-route-id="@item.PregledId">Obriši</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DatumPregleda)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DetaljiPregleda)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UspjesanPregled)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.PregledId">Uredi</a> |
+                    <a asp-action="Details" asp-route-id="@item.PregledId">Detalji</a> |
+                    <a asp-action="Delete" asp-route-id="@item.PregledId">Obriši</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
-<div>
+
+<br />
+
+<p>
+    <a asp-action="Index" asp-controller="Zavod">Nazad na početnu</a>
+</p>
+
+<br />
+
+<p>
     <a asp-action="Index" asp-controller="Home">Odjava</a>
-</div>
+</p>

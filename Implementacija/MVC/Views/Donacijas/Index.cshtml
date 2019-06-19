@@ -24,28 +24,31 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DatumDonacije)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DoniranaKolicinaKrvi)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.DonacijaId">Uredi</a> |
-                    <a asp-action="Details" asp-route-id="@item.DonacijaId">Detalji</a> |
-                    <a asp-action="Delete" asp-route-id="@item.DonacijaId">Obriši</a>
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatumDonacije)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoniranaKolicinaKrvi)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DonacijaId">Uredi</a> |
+                <a asp-action="Details" asp-route-id="@item.DonacijaId">Detalji</a> |
+                <a asp-action="Delete" asp-route-id="@item.DonacijaId">Obriši</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>
 
 <br />
 
-<div>
+<p>
     <a asp-action="Index" asp-controller="Zavod">Nazad na početnu</a>
-</div>
-<div>
+</p>
+
+<br />
+
+<p>
     <a asp-action="Index" asp-controller="Home">Odjava</a>
-</div>
+</p>

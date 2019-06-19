@@ -4,9 +4,8 @@
     ViewData["Title"] = "Podaci o donoru";
 }
 
-<h1 style="color:#cc0000;">Podaci o donoru</h1>
+<h1 style="color:#cc0000;">Unos podataka o donoru</h1>
 
-<h4 >Donor</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -58,13 +57,17 @@
     <a asp-action="Index">Pregled svih donora</a>
 </div>
 
+<br />
+
 <p>
-    <a asp-action="Index" asp-controller="Zavod">Povratak na prethodnu stranicu</a>
+    <a asp-action="Index" asp-controller="Zavod">Nazad na početnu</a>
 </p>
 
-<div>
+<br />
+
+<p>
     <a asp-action="Index" asp-controller="Home">Odjava</a>
-</div>
+</p>
 
 
 @section Scripts {

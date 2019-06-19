@@ -31,15 +31,17 @@
                 @Html.DisplayFor(modelItem => item.sifra)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.KorisnikId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.KorisnikId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.KorisnikId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.KorisnikId">Uredi</a> |
+                <a asp-action="Details" asp-route-id="@item.KorisnikId">Detalji</a> |
+                <a asp-action="Delete" asp-route-id="@item.KorisnikId">Obriši</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
 
-<div>
+<br />
+
+<p>
     <a asp-action="Index" asp-controller="Home">Odjava</a>
-</div>
+</p>

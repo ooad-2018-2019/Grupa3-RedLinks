@@ -59,7 +59,8 @@ namespace BloodDonationApplication.Controllers
             {
                 _context.Add(pregled);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Create", "Donacijas");
+                if (pregled.UspjesanPregled == true) return RedirectToAction("Create", "Donacijas");
+                else return RedirectToAction("Index", "Zavod");
             }
             return View(pregled);
         }

@@ -48,11 +48,20 @@
         </dd>
     </dl>
 </div>
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model.DonorId">Uredi</a> |
     <a asp-action="Index">Pregled svih donora</a>
 </div>
-<div>
-    <a asp-action="Index" asp-controller="Home">Odjava</a>
-</div>
 
+<br />
+
+<p>
+    <a asp-action="Index" asp-controller="Zavod">Nazad na početnu</a>
+</p>
+
+<br />
+
+<p>
+    <a asp-action="Index" asp-controller="Home">Odjava</a>
+</p>
