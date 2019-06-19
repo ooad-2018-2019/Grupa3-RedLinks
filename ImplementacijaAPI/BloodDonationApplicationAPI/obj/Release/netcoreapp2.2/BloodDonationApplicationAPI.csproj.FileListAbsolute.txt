@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\bin\Release\netcoreapp2.2\BloodDonationApplicationAPI.deps.json
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\bin\Release\netcoreapp2.2\BloodDonationApplicationAPI.runtimeconfig.json
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\bin\Release\netcoreapp2.2\BloodDonationApplicationAPI.runtimeconfig.dev.json
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\bin\Release\netcoreapp2.2\BloodDonationApplicationAPI.dll
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\bin\Release\netcoreapp2.2\BloodDonationApplicationAPI.pdb
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\obj\Release\netcoreapp2.2\BloodDonationApplicationAPI.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\obj\Release\netcoreapp2.2\BloodDonationApplicationAPI.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\obj\Release\netcoreapp2.2\BloodDonationApplicationAPI.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\obj\Release\netcoreapp2.2\BloodDonationApplicationAPI.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\obj\Release\netcoreapp2.2\BloodDonationApplicationAPI.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\obj\Release\netcoreapp2.2\BloodDonationApplicationAPI.AssemblyInfo.cs
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\obj\Release\netcoreapp2.2\BloodDonationApplicationAPI.RazorTargetAssemblyInfo.cache
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\obj\Release\netcoreapp2.2\BloodDonationApplicationAPI.dll
+C:\Users\user\Desktop\Grupa3-RedLinks\ImplementacijaAPI\BloodDonationApplicationAPI\obj\Release\netcoreapp2.2\BloodDonationApplicationAPI.pdb
